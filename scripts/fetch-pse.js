@@ -2,134 +2,99 @@ const fetch = require('node-fetch');
 const fs    = require('fs');
 const path  = require('path');
 
-const SYMBOLS = [
-  { symbol:'SM',    name:'SM Investments Corp.'            },
-  { symbol:'ALI',   name:'Ayala Land, Inc.'                },
-  { symbol:'BDO',   name:'BDO Unibank, Inc.'               },
-  { symbol:'JFC',   name:'Jollibee Foods Corp.'            },
-  { symbol:'AC',    name:'Ayala Corporation'               },
-  { symbol:'TEL',   name:'PLDT Inc.'                       },
-  { symbol:'GLO',   name:'Globe Telecom, Inc.'             },
-  { symbol:'BPI',   name:'Bank of the Philippine Islands'  },
-  { symbol:'SMPH',  name:'SM Prime Holdings, Inc.'         },
-  { symbol:'MER',   name:'Manila Electric Company'         },
-  { symbol:'ICT',   name:"Int'l Container Terminal Svcs."  },
-  { symbol:'AGI',   name:'Alliance Global Group'           },
-  { symbol:'MONDE', name:'Monde Nissin Corporation'        },
-  { symbol:'BLOOM', name:'Bloomberry Resorts Corp.'        },
-  { symbol:'GTCAP', name:'GT Capital Holdings, Inc.'       },
-  { symbol:'MEG',   name:'Megaworld Corporation'           },
-];
-
 const OUT_DIR  = path.join(__dirname, '..', 'public', 'data');
 const OUT_FILE = path.join(OUT_DIR, 'pse-stocks.json');
 const UA       = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36';
-const delay    = ms => new Promise(r => setTimeout(r, ms));
 
-async function getSession() {
-  // Try crumb without cookies first
-  try {
-    const r     = await fetch('https://query2.finance.yahoo.com/v1/test/getcrumb', { headers:{ 'User-Agent': UA } });
-    const crumb = await r.text();
-    if (crumb && crumb.length > 2 && !crumb.includes('<') && !crumb.includes('{')) {
-      console.log('Session: crumb obtained without cookies');
-      return { cookie: '', crumb };
-    }
-  } catch(e) { /* fall through */ }
+async function fetchFromTradingView() {
+  const url  = 'https://scanner.tradingview.com/philippines/scan';
+  const cols = ['name', 'description', 'close', 'change', 'volume', 'open', 'high', 'low', 'market_cap_basic'];
 
-  // Fallback: get cookies from Yahoo homepage
-  console.log('Session: fetching cookies from Yahoo homepage...');
-  const r1         = await fetch('https://finance.yahoo.com/', { headers:{ 'User-Agent': UA } });
-  const rawCookies = r1.headers.raw()['set-cookie'] || [];
-  const cookie     = rawCookies.map(c => c.split(';')[0]).join('; ');
-  const r2         = await fetch('https://query1.finance.yahoo.com/v1/test/getcrumb', { headers:{ 'User-Agent': UA, 'Cookie': cookie } });
-  const crumb      = await r2.text();
-  if (!crumb || crumb.length < 2 || crumb.includes('<')) throw new Error('Could not get crumb');
-  console.log(`Session: got crumb via cookies`);
-  return { cookie, crumb };
-}
-
-async function fetchStock(symbol, cookie, crumb) {
-  // v8 CHART API — returns historical closing prices even for YHD/PSE stocks
-  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}.PS?interval=1d&range=5d&crumb=${encodeURIComponent(crumb)}`;
+  console.log('Fetching ALL PSE stocks from TradingView Screener...');
   const res = await fetch(url, {
-    headers: { 'User-Agent': UA, 'Cookie': cookie, 'Accept': 'application/json' }
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Origin':       'https://www.tradingview.com',
+      'Referer':      'https://www.tradingview.com/markets/stocks-philippines/',
+      'User-Agent':   UA,
+    },
+    body: JSON.stringify({
+      filter:  [],
+      options: { lang: 'en' },
+      symbols: { query: { types: ['stock'] }, tickers: [] },
+      columns: cols,
+      sort:    { sortBy: 'name', sortOrder: 'asc' },
+      range:   [0, 500],   // PSE has ~252 — 500 covers everything
+    }),
   });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
-  const data   = await res.json();
-  const result = data?.chart?.result?.[0];
-  if (!result)  throw new Error('No chart data in response');
-
-  const meta   = result.meta   || {};
-  const quotes = result.indicators?.quote?.[0] || {};
-  const closes = (quotes.close  || []).filter(c => c != null);
-  const vols   = (quotes.volume || []).filter(v => v != null);
-
-  // Price: prefer regularMarketPrice, fall back to most recent close in chart data
-  let price         = meta.regularMarketPrice  ?? null;
-  let previousClose = meta.chartPreviousClose  ?? meta.previousClose ?? null;
-
-  if (price == null && closes.length > 0) {
-    price = +closes[closes.length - 1].toFixed(2);
-  }
-  if (previousClose == null && closes.length > 1) {
-    previousClose = +closes[closes.length - 2].toFixed(2);
+  console.log(`  HTTP ${res.status}`);
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`TradingView HTTP ${res.status}: ${body.substring(0, 300)}`);
   }
 
-  const change        = price != null && previousClose != null ? +(price - previousClose).toFixed(2) : null;
-  const changePercent = price != null && previousClose != null
-    ? +(((price - previousClose) / previousClose) * 100).toFixed(2) : null;
-
-  return {
-    price,
-    previousClose,
-    change,
-    changePercent,
-    volume:           vols.length   > 0 ? vols[vols.length - 1]       : null,
-    dayHigh:          meta.regularMarketDayHigh  ?? null,
-    dayLow:           meta.regularMarketDayLow   ?? null,
-    fiftyTwoWeekHigh: meta.fiftyTwoWeekHigh       ?? null,
-    fiftyTwoWeekLow:  meta.fiftyTwoWeekLow        ?? null,
-    currency:         meta.currency              ?? 'PHP',
-    exchange:         meta.exchangeName          ?? 'PSE',
-    marketState:      meta.marketState           ?? null,
-  };
+  const json = await res.json();
+  if (!json.data) throw new Error('No data in TradingView response');
+  console.log(`  Stocks returned: ${json.data.length}`);
+  return json.data;
 }
 
 async function main() {
-  console.log(`PSE Fetcher — ${new Date().toISOString()}\n`);
-  const { cookie, crumb } = await getSession();
+  console.log(`PSE Fetcher (TradingView) — ${new Date().toISOString()}\n`);
 
-  const results  = [];
-  const failures = [];
+  const rows    = await fetchFromTradingView();
+  const results = [];
 
-  for (const { symbol, name } of SYMBOLS) {
-    try {
-      const d     = await fetchStock(symbol, cookie, crumb);
-      const arrow = d.change > 0 ? '▲' : d.change < 0 ? '▼' : '—';
-      console.log(`✅  ${symbol.padEnd(6)} ₱${String(d.price ?? '—').padStart(9)}  ${arrow} ${d.changePercent?.toFixed(2) ?? '—'}%`);
-      results.push({ symbol, name, ...d });
-    } catch (err) {
-      failures.push(symbol);
-      console.warn(`❌  ${symbol.padEnd(6)} ${err.message}`);
-    }
-    await delay(500);
+  for (const row of rows) {
+    // row.s = "PSE:SYMBOL"
+    // row.d = [name, description, close, change%, volume, open, high, low, mktcap]
+    const symbol = row.s.split(':')[1];
+    const [, description, close, changePct, volume, , high, low, mktcap] = row.d;
+
+    const price         = close    != null ? +close.toFixed(2)     : null;
+    const changePercent = changePct != null ? +changePct.toFixed(2) : null;
+
+    // previousClose = price / (1 + changePct/100)
+    const previousClose = price != null && changePct != null && changePct !== 0
+      ? +(price / (1 + changePct / 100)).toFixed(2)
+      : price;
+
+    const change = price != null && previousClose != null
+      ? +(price - previousClose).toFixed(2) : null;
+
+    const arrow = change > 0 ? '▲' : change < 0 ? '▼' : '—';
+    console.log(`  ${symbol.padEnd(8)} ₱${String(price ?? '—').padStart(9)}  ${arrow} ${changePercent?.toFixed(2) ?? '—'}%  ${description ?? ''}`);
+
+    results.push({
+      symbol,
+      name:         description || symbol,
+      price,
+      previousClose,
+      change,
+      changePercent,
+      volume:    volume ?? null,
+      dayHigh:   high   ?? null,
+      dayLow:    low    ?? null,
+      marketCap: mktcap ?? null,
+      currency:  'PHP',
+      exchange:  'PSE',
+    });
   }
 
-  console.log(`\nDone — ${results.length} fetched, ${failures.length} failed`);
-  if (failures.length) console.log(`Failed: ${failures.join(', ')}`);
+  console.log(`\nTotal saved: ${results.length} stocks`);
+  if (results.length === 0) throw new Error('No stocks returned');
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
   fs.writeFileSync(OUT_FILE, JSON.stringify({
     lastUpdated: new Date().toISOString(),
-    source:      'Yahoo Finance v8 chart API',
+    source:      'TradingView Screener (scanner.tradingview.com)',
     fetchedBy:   'GitHub Actions',
     stocks:      results,
   }, null, 2));
 
   console.log(`Saved → ${OUT_FILE}`);
-  if (results.length === 0) process.exit(1);
 }
 
 main().catch(err => { console.error('\nFatal:', err.message); process.exit(1); });
