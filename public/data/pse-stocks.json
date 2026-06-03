@@ -1,11 +1,13 @@
 {
-  "lastUpdated": "2026-06-03T09:58:45.936Z",
-  "source": "Yahoo Finance (.PS tickers)",
+  "lastUpdated": "2026-06-03T23:28:54.460Z",
+  "source": "Yahoo Finance",
   "fetchedBy": "GitHub Actions",
   "stocks": [
     {
       "symbol": "SM",
       "name": "SM Investments Corp.",
+      "price": null,
+      "previousClose": null,
       "change": null,
       "changePercent": null,
       "volume": null,
@@ -15,11 +17,13 @@
       "fiftyTwoWeekLow": null,
       "currency": "PHP",
       "exchange": "YHD",
-      "marketState": null
+      "marketState": "POST"
     },
     {
       "symbol": "ALI",
       "name": "Ayala Land, Inc.",
+      "price": null,
+      "previousClose": null,
       "change": null,
       "changePercent": null,
       "volume": null,
@@ -29,11 +33,13 @@
       "fiftyTwoWeekLow": null,
       "currency": "PHP",
       "exchange": "YHD",
-      "marketState": null
+      "marketState": "POST"
     },
     {
       "symbol": "BDO",
       "name": "BDO Unibank, Inc.",
+      "price": null,
+      "previousClose": null,
       "change": null,
       "changePercent": null,
       "volume": null,
@@ -43,11 +49,13 @@
       "fiftyTwoWeekLow": null,
       "currency": "PHP",
       "exchange": "YHD",
-      "marketState": null
+      "marketState": "POST"
     },
     {
       "symbol": "JFC",
       "name": "Jollibee Foods Corp.",
+      "price": null,
+      "previousClose": null,
       "change": null,
       "changePercent": null,
       "volume": null,
@@ -57,11 +65,13 @@
       "fiftyTwoWeekLow": null,
       "currency": "PHP",
       "exchange": "YHD",
-      "marketState": null
+      "marketState": "POST"
     },
     {
       "symbol": "AC",
       "name": "Ayala Corporation",
+      "price": null,
+      "previousClose": null,
       "change": null,
       "changePercent": null,
       "volume": null,
@@ -71,11 +81,13 @@
       "fiftyTwoWeekLow": null,
       "currency": "PHP",
       "exchange": "YHD",
-      "marketState": null
+      "marketState": "POST"
     },
     {
       "symbol": "TEL",
       "name": "PLDT Inc.",
+      "price": null,
+      "previousClose": null,
       "change": null,
       "changePercent": null,
       "volume": null,
@@ -85,11 +97,13 @@
       "fiftyTwoWeekLow": null,
       "currency": "PHP",
       "exchange": "YHD",
-      "marketState": null
+      "marketState": "POST"
     },
     {
       "symbol": "GLO",
       "name": "Globe Telecom, Inc.",
+      "price": null,
+      "previousClose": null,
       "change": null,
       "changePercent": null,
       "volume": null,
@@ -99,11 +113,13 @@
       "fiftyTwoWeekLow": null,
       "currency": "PHP",
       "exchange": "YHD",
-      "marketState": null
+      "marketState": "POST"
     },
     {
       "symbol": "BPI",
       "name": "Bank of the Philippine Islands",
+      "price": null,
+      "previousClose": null,
       "change": null,
       "changePercent": null,
       "volume": null,
@@ -113,11 +129,13 @@
       "fiftyTwoWeekLow": null,
       "currency": "PHP",
       "exchange": "YHD",
-      "marketState": null
+      "marketState": "POST"
     },
     {
       "symbol": "SMPH",
       "name": "SM Prime Holdings, Inc.",
+      "price": null,
+      "previousClose": null,
       "change": null,
       "changePercent": null,
       "volume": null,
@@ -127,11 +145,13 @@
       "fiftyTwoWeekLow": null,
       "currency": "PHP",
       "exchange": "YHD",
-      "marketState": null
+      "marketState": "POST"
     },
     {
       "symbol": "MER",
       "name": "Manila Electric Company",
+      "price": null,
+      "previousClose": null,
       "change": null,
       "changePercent": null,
       "volume": null,
@@ -141,11 +161,13 @@
       "fiftyTwoWeekLow": null,
       "currency": "PHP",
       "exchange": "YHD",
-      "marketState": null
+      "marketState": "POST"
     },
     {
       "symbol": "ICT",
       "name": "Int'l Container Terminal Svcs.",
+      "price": null,
+      "previousClose": null,
       "change": null,
       "changePercent": null,
       "volume": null,
@@ -155,11 +177,13 @@
       "fiftyTwoWeekLow": null,
       "currency": "PHP",
       "exchange": "YHD",
-      "marketState": null
+      "marketState": "POST"
     },
     {
       "symbol": "AGI",
       "name": "Alliance Global Group",
+      "price": null,
+      "previousClose": null,
       "change": null,
       "changePercent": null,
       "volume": null,
@@ -169,11 +193,13 @@
       "fiftyTwoWeekLow": null,
       "currency": "PHP",
       "exchange": "YHD",
-      "marketState": null
+      "marketState": "POST"
     },
     {
       "symbol": "MEG",
       "name": "Megaworld Corporation",
+      "price": null,
+      "previousClose": null,
       "change": null,
       "changePercent": null,
       "volume": null,
@@ -183,7 +209,7 @@
       "fiftyTwoWeekLow": null,
       "currency": "PHP",
       "exchange": "YHD",
-      "marketState": null
+      "marketState": "POST"
     }
   ]
 }
