@@ -22,7 +22,7 @@ jobs:
         run: npm install node-fetch@2
 
       - name: Fetch PSE stock data
-        run: node scripts/fetch-pse.js
+        run: node --max-http-header-size=81920 scripts/fetch-pse.js
 
       - name: Commit updated stock data
         run: |
