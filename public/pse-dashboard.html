@@ -8,92 +8,129 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
 :root{
-  --bg:#060D1E;--s1:#0C1528;--s2:#111E35;
-  --bd:#1E2F50;--bd2:#2A3F6A;
-  --tp:#E8F0FF;--ts:#7B92BB;--tm:#3D5280;
-  --up:#00E096;--upd:rgba(0,224,150,.12);
-  --dn:#FF3B5B;--dnd:rgba(255,59,91,.12);
-  --go:#F5C518;--god:rgba(245,197,24,.1);
-  --ac:#2563EB;
+  /* Light Mode Palette */
+  --bg: #FFFFFF;         /* White Background */
+  --hdr-bg: #1E3A8A;     /* Blue Header */
+  --hdr-txt: #FFFFFF;    /* White text for header */
+  --s1: #F5F5DC;         /* Beige Cards */
+  --s2: #EAEACA;         /* Hover Beige */
+  --bd: #D1D5DB;         /* Light Gray Borders */
+  --bd2: #9CA3AF;        /* Darker Gray Borders */
+  
+  --tp: #111827;         /* Primary Text (Dark) */
+  --ts: #4B5563;         /* Secondary Text */
+  --tm: #6B7280;         /* Muted Text */
+  
+  --up: #059669;         /* Green for up */
+  --upd: rgba(5, 150, 105, 0.15);
+  --dn: #DC2626;         /* Red for down */
+  --dnd: rgba(220, 38, 38, 0.15);
+  --go: #D97706;         /* Amber/Gold */
+  --god: rgba(217, 119, 6, 0.15);
+  --ac: #2563EB;         /* Accent Blue */
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--tp);font-family:'Rajdhani',sans-serif;min-height:100vh;overflow-x:hidden}
 body::before{
   content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
-  background-image:linear-gradient(rgba(30,47,80,.12) 1px,transparent 1px),
-                   linear-gradient(90deg,rgba(30,47,80,.12) 1px,transparent 1px);
+  background-image:linear-gradient(rgba(0,0,0,.03) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(0,0,0,.03) 1px,transparent 1px);
   background-size:44px 44px;
 }
 .wrap{max-width:1440px;margin:0 auto;padding:24px;position:relative;z-index:1}
-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:28px;flex-wrap:wrap;gap:16px}
+
+/* Header styled as Blue */
+header{background:var(--hdr-bg);color:var(--hdr-txt);display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:28px;flex-wrap:wrap;gap:16px;padding:24px;border-radius:12px;box-shadow:0 4px 6px rgba(0,0,0,0.05);}
 .hl{display:flex;flex-direction:column;gap:6px}
 .logo-row{display:flex;align-items:center;gap:10px}
-.badge{background:var(--go);color:#060D1E;font-family:'Space Mono',monospace;font-weight:700;font-size:10px;letter-spacing:.12em;padding:4px 8px;border-radius:3px}
+.badge{background:#FBBF24;color:#1E3A8A;font-family:'Space Mono',monospace;font-weight:700;font-size:10px;letter-spacing:.12em;padding:4px 8px;border-radius:3px}
 h1{font-size:26px;font-weight:700;letter-spacing:.06em}
-h1 span{color:var(--go)}
-.sub{font-size:12px;color:var(--ts);letter-spacing:.1em;text-transform:uppercase;font-weight:500}
+h1 span{color:#FBBF24}
+.sub{font-size:12px;color:#93C5FD;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
 .hr{display:flex;flex-direction:column;align-items:flex-end;gap:7px}
-.clock{font-family:'Space Mono',monospace;font-size:22px;letter-spacing:.04em}
-.clock-sub{font-size:11px;color:var(--ts);letter-spacing:.08em}
-.status-pill{display:inline-flex;align-items:center;gap:7px;padding:5px 13px;border-radius:4px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border:1px solid}
-.status-pill.open{background:var(--upd);color:var(--up);border-color:rgba(0,224,150,.3)}
-.status-pill.closed{background:rgba(61,82,128,.15);color:var(--ts);border-color:var(--bd)}
-.status-pill.pre{background:var(--god);color:var(--go);border-color:rgba(245,197,24,.3)}
+.clock{font-family:'Space Mono',monospace;font-size:22px;letter-spacing:.04em;color:var(--hdr-txt)}
+.clock-sub{font-size:11px;color:#93C5FD;letter-spacing:.08em}
+
+.status-pill{display:inline-flex;align-items:center;gap:7px;padding:5px 13px;border-radius:4px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border:1px solid;background:rgba(255,255,255,0.1);color:var(--hdr-txt);border-color:rgba(255,255,255,0.2)}
 .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
-.status-pill.open .dot{animation:blink 2s infinite}
+.status-pill.open .dot{animation:blink 2s infinite;color:#34D399}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
-.ibar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;background:var(--s1);border:1px solid var(--bd);border-radius:8px;padding:12px 20px;margin-bottom:22px}
+
+.ibar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;background:#FAFAFA;border:1px solid var(--bd);border-radius:8px;padding:12px 20px;margin-bottom:22px}
 .iitem{display:flex;flex-direction:column;gap:2px}
 .ilbl{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--tm);font-weight:700}
 .ival{font-family:'Space Mono',monospace;font-size:13px;color:var(--tp)}
 .ival.up{color:var(--up)}.ival.dn{color:var(--dn)}.ival.go{color:var(--go)}
 .idiv{width:1px;height:34px;background:var(--bd)}
-.demo-banner{background:var(--god);border:1px solid rgba(245,197,24,.25);border-radius:6px;padding:9px 16px;margin-bottom:16px;font-size:12px;color:var(--go);letter-spacing:.04em;display:none;align-items:center;gap:8px}
-.stale-banner{background:rgba(255,59,91,.07);border:1px solid rgba(255,59,91,.2);border-radius:6px;padding:9px 16px;margin-bottom:16px;font-size:12px;color:var(--dn);letter-spacing:.04em;display:none;align-items:center;gap:8px}
+
+.demo-banner{background:var(--god);border:1px solid rgba(217,119,6,.25);border-radius:6px;padding:9px 16px;margin-bottom:16px;font-size:12px;color:var(--go);letter-spacing:.04em;display:none;align-items:center;gap:8px}
+.stale-banner{background:rgba(220,38,38,.07);border:1px solid rgba(220,38,38,.2);border-radius:6px;padding:9px 16px;margin-bottom:16px;font-size:12px;color:var(--dn);letter-spacing:.04em;display:none;align-items:center;gap:8px}
+
 .ctrls{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:16px}
-.sbox{display:flex;align-items:center;gap:8px;background:var(--s1);border:1px solid var(--bd);border-radius:6px;padding:8px 13px;min-width:220px}
+.sbox{display:flex;align-items:center;gap:8px;background:#FFF;border:1px solid var(--bd);border-radius:6px;padding:8px 13px;min-width:220px}
 .sbox input{background:none;border:none;outline:none;color:var(--tp);font-family:'Space Mono',monospace;font-size:12px;width:100%}
 .sbox input::placeholder{color:var(--tm)}
 .si{color:var(--tm);font-size:15px}
-.sorts{display:flex;gap:5px}
-.sbtn{background:var(--s1);border:1px solid var(--bd);color:var(--ts);font-family:'Rajdhani',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:6px 13px;border-radius:4px;cursor:pointer;transition:all .18s}
+.sorts{display:flex;gap:5px;align-items:center}
+.sbtn{background:#FAFAFA;border:1px solid var(--bd);color:var(--ts);font-family:'Rajdhani',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:6px 13px;border-radius:4px;cursor:pointer;transition:all .18s}
 .sbtn:hover{border-color:var(--bd2);color:var(--tp)}
 .sbtn.on{background:var(--ac);border-color:var(--ac);color:#fff}
+
 .rrow{display:flex;align-items:center;gap:10px;margin-bottom:18px;font-size:11px;color:var(--tm)}
 .rtrack{flex:1;height:2px;background:var(--bd);border-radius:2px;overflow:hidden}
-.rbar{height:100%;background:var(--go);border-radius:2px;transition:width 1s linear}
+.rbar{height:100%;background:var(--ac);border-radius:2px;transition:width 1s linear}
 .lupd{font-family:'Space Mono',monospace;font-size:10px;white-space:nowrap}
 .rbtn{background:none;border:1px solid var(--bd);color:var(--tm);font-family:'Rajdhani',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:4px;cursor:pointer;transition:all .18s}
 .rbtn:hover{color:var(--tp);border-color:var(--bd2)}
 .rcd{font-family:'Space Mono',monospace;font-size:11px;white-space:nowrap}
+
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(278px,1fr));gap:13px}
 .card{background:var(--s1);border:1px solid var(--bd);border-radius:8px;padding:17px 19px;cursor:default;transition:border-color .18s,background .18s,transform .18s;position:relative;overflow:hidden;animation:cin .38s ease both}
-.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
 .card.up::before{background:var(--up)}.card.dn::before{background:var(--dn)}.card.fl::before{background:var(--bd2)}
 .card:hover{border-color:var(--bd2);background:var(--s2);transform:translateY(-2px)}
 @keyframes cin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
 .ch{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:13px}
 .sym{font-family:'Space Mono',monospace;font-size:17px;font-weight:700;letter-spacing:.04em}
 .cname{font-size:10px;color:var(--tm);margin-top:2px;letter-spacing:.03em}
 .cbadge{display:flex;align-items:center;gap:4px;padding:4px 9px;border-radius:4px;font-family:'Space Mono',monospace;font-size:11px;font-weight:700}
-.cbadge.up{background:var(--upd);color:var(--up)}.cbadge.dn{background:var(--dnd);color:var(--dn)}.cbadge.fl{background:rgba(61,82,128,.15);color:var(--ts)}
+.cbadge.up{background:var(--upd);color:var(--up)}.cbadge.dn{background:var(--dnd);color:var(--dn)}.cbadge.fl{background:rgba(107,114,128,.15);color:var(--ts)}
 .cprice{font-family:'Space Mono',monospace;font-size:25px;font-weight:700;margin-bottom:3px}
 .cprice.up{color:var(--up)}.cprice.dn{color:var(--dn)}.cprice.fl{color:var(--tp)}
 .cur{font-size:13px;color:var(--tm);margin-right:2px}
 .cchg{font-size:12px;color:var(--ts);font-family:'Space Mono',monospace}
-.cfoot{display:flex;justify-content:space-between;align-items:flex-end;margin-top:13px;padding-top:11px;border-top:1px solid var(--bd)}
+
+.cfoot{display:flex;justify-content:space-between;align-items:flex-end;margin-top:13px;padding-top:11px;border-top:1px solid rgba(0,0,0,0.06)}
 .fi{display:flex;flex-direction:column;gap:2px}
 .fl2{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--tm);font-weight:700}
-.fv{font-family:'Space Mono',monospace;font-size:10px;color:var(--ts)}
-.sbar{width:56px;height:22px;display:flex;align-items:flex-end;gap:2px}
-.sb{flex:1;border-radius:1px}
+.fv{font-family:'Space Mono',monospace;font-size:10px;color:var(--tp);font-weight:700}
+
+/* Table View Styles */
+.table-wrap{width:100%;overflow-x:auto;background:#FFF;border:1px solid var(--bd);border-radius:8px;}
+table{width:100%;border-collapse:collapse;text-align:left;font-family:'Space Mono',monospace;font-size:12px;}
+th{background:#FAFAFA;padding:12px 16px;color:var(--tm);font-family:'Rajdhani',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--bd);}
+td{padding:12px 16px;border-bottom:1px solid var(--bd);color:var(--tp);vertical-align:middle;}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:#F9FAFB;}
+td.up{color:var(--up);font-weight:700;}
+td.dn{color:var(--dn);font-weight:700;}
+
+/* Action Buttons */
+.btn-action{padding:5px 10px;border:none;border-radius:4px;cursor:pointer;font-family:'Rajdhani',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;transition:opacity .15s;}
+.btn-action:hover{opacity:.8;}
+.btn-add{background:var(--upd);color:var(--up);}
+.btn-rm{background:var(--dnd);color:var(--dn);}
+
 .soverlay{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:280px;gap:14px}
-.spin{width:36px;height:36px;border:2px solid var(--bd);border-top-color:var(--go);border-radius:50%;animation:sp .7s linear infinite}
+.spin{width:36px;height:36px;border:2px solid var(--bd);border-top-color:var(--ac);border-radius:50%;animation:sp .7s linear infinite}
 @keyframes sp{to{transform:rotate(360deg)}}
-.slbl{font-size:12px;color:var(--tm);text-transform:uppercase;letter-spacing:.1em}
+.slbl{font-size:14px;color:var(--tm);font-weight:600;}
+
 footer{margin-top:36px;padding-top:18px;border-top:1px solid var(--bd);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:10px;color:var(--tm);letter-spacing:.04em}
 @media(max-width:640px){
   .wrap{padding:14px}
+  header{padding:16px;}
   h1{font-size:20px}.clock{font-size:17px}
   .idiv{display:none}.grid{grid-template-columns:1fr}
   .ctrls{flex-direction:column}.sbox{min-width:unset;width:100%}
@@ -120,6 +157,7 @@ footer{margin-top:36px;padding-top:18px;border-top:1px solid var(--bd);display:f
       </div>
     </div>
   </header>
+  
   <div class="ibar">
     <div class="iitem"><div class="ilbl">Stocks Tracked</div><div class="ival" id="itotal">—</div></div>
     <div class="idiv"></div>
@@ -132,42 +170,53 @@ footer{margin-top:36px;padding-top:18px;border-top:1px solid var(--bd);display:f
     <div class="iitem"><div class="ilbl">Best Performer</div><div class="ival up" id="ibest">—</div></div>
     <div class="idiv"></div>
     <div class="iitem"><div class="ilbl">Worst Performer</div><div class="ival dn" id="iworst">—</div></div>
-    <div class="idiv"></div>
-    <div class="iitem"><div class="ilbl">Data Feed</div><div class="ival" style="font-size:10px;color:var(--ts)">Yahoo Finance<br/>via GitHub Actions</div></div>
   </div>
+
   <div class="demo-banner" id="demobanner">⚠ Demo mode — GitHub Actions has not run yet. Showing simulated data.</div>
   <div class="stale-banner" id="stalebanner">⏱ Data may be stale — last fetch was over 1 hour ago.</div>
+  
   <div class="ctrls">
     <div class="sbox">
       <span class="si">&#9906;</span>
       <input type="text" id="srch" placeholder="Search symbol or company…"/>
     </div>
     <div class="sorts">
+      <button class="sbtn on" id="viewBtn" onclick="toggleView()" style="background:var(--ac);color:#fff;border-color:var(--ac);">📋 Show All Stocks (Table)</button>
+      <span style="width:1px;height:20px;background:var(--bd);margin:0 8px;"></span>
       <button class="sbtn on" data-s="sym" onclick="setSort('sym')">Symbol</button>
       <button class="sbtn" data-s="prc" onclick="setSort('prc')">Price</button>
       <button class="sbtn" data-s="chg" onclick="setSort('chg')">Change %</button>
       <button class="sbtn" data-s="vol" onclick="setSort('vol')">Volume</button>
     </div>
   </div>
+
   <div class="rrow">
     <span class="lupd" id="lupd">Last updated: —</span>
     <div class="rtrack"><div class="rbar" id="rbar" style="width:100%"></div></div>
     <span class="rcd" id="rcd">—</span>
     <button class="rbtn" onclick="loadData(true)">↺ Refresh</button>
   </div>
+
   <div id="scont">
     <div class="soverlay"><div class="spin"></div><div class="slbl">Loading market data…</div></div>
   </div>
+
   <footer>
     <span>PSE Market Watch · Firebase Hosting + GitHub Actions</span>
     <span>Prices via Yahoo Finance (.PS tickers) · Not financial advice</span>
   </footer>
 </div>
+
 <script>
 /* ── CONFIG ── */
 const DATA_URL    = 'https://raw.githubusercontent.com/pascualrc29/Zaifuku-Joju/main/public/data/pse-stocks.json';
 const REFRESH_SEC = 5 * 60;
 const STALE_MS    = 60 * 60 * 1000;
+
+/* ── STATE ── */
+let stocks=[],sortKey='sym',query='',timer=null,secs=REFRESH_SEC,demoMode=false;
+let viewMode = 'watchlist'; // 'watchlist' or 'all'
+let watchlist = JSON.parse(localStorage.getItem('pse_watchlist')) || ['SM', 'BDO', 'ALI'];
 
 /* ── DEMO / FALLBACK DATA ── */
 const BASE = [
@@ -188,6 +237,7 @@ const BASE = [
   {symbol:'GTCAP',name:'GT Capital Holdings, Inc.',     price:490.00, prev:485.00, vol:28400},
   {symbol:'MEG',  name:'Megaworld Corporation',         price:2.18,   prev:2.24,   vol:42180000},
 ];
+
 function mockData(){
   const stocks=BASE.map(b=>{
     const j=(Math.random()-.5)*.6, price=+(b.price+j).toFixed(2), change=+(price-b.prev).toFixed(2);
@@ -195,9 +245,6 @@ function mockData(){
   });
   return{lastUpdated:new Date().toISOString(),stocks};
 }
-
-/* ── STATE ── */
-let stocks=[],sortKey='sym',query='',timer=null,secs=REFRESH_SEC,demoMode=false;
 
 /* ── CLOCK ── */
 function phtNow(){return new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Manila'}))}
@@ -218,7 +265,7 @@ function tickStatus(){
 setInterval(()=>{tickClock();tickStatus();},1000);
 tickClock();tickStatus();
 
-/* ── DATA ── */
+/* ── DATA & WATCHLIST LOGIC ── */
 async function loadData(manual=false){
   if(manual){secs=REFRESH_SEC;showLoading();}
   try{
@@ -230,9 +277,37 @@ async function loadData(manual=false){
     demoMode=true; process(mockData());
   }
 }
+
 function showLoading(){
   document.getElementById('scont').innerHTML=`<div class="soverlay"><div class="spin"></div><div class="slbl">Loading market data…</div></div>`;
 }
+
+function toggleView() {
+    viewMode = viewMode === 'watchlist' ? 'all' : 'watchlist';
+    const btn = document.getElementById('viewBtn');
+    if(viewMode === 'watchlist') {
+        btn.textContent = '📋 Show All Stocks (Table)';
+        btn.style.background = 'var(--ac)';
+        btn.style.color = '#fff';
+    } else {
+        btn.textContent = '⭐ Back to Watchlist';
+        btn.style.background = '#FBBF24';
+        btn.style.color = '#1E3A8A';
+        btn.style.borderColor = '#FBBF24';
+    }
+    render();
+}
+
+function toggleWatchlist(sym) {
+    if(watchlist.includes(sym)) {
+        watchlist = watchlist.filter(s => s !== sym);
+    } else {
+        watchlist.push(sym);
+    }
+    localStorage.setItem('pse_watchlist', JSON.stringify(watchlist));
+    render();
+}
+
 function process(data){
   stocks=(data.stocks||[]).map(s=>({
     ...s,
@@ -242,15 +317,18 @@ function process(data){
   const ts=new Date(data.lastUpdated),stale=(Date.now()-ts.getTime())>STALE_MS;
   document.getElementById('demobanner').style.display=demoMode?'flex':'none';
   document.getElementById('stalebanner').style.display=(!demoMode&&stale)?'flex':'none';
+  
   const up=stocks.filter(s=>s.change>0).length,dn=stocks.filter(s=>s.change<0).length,fl=stocks.filter(s=>s.change===0).length;
   document.getElementById('itotal').textContent=stocks.length;
   document.getElementById('iup').textContent=up;
   document.getElementById('idn').textContent=dn;
   document.getElementById('ifl').textContent=fl;
+  
   const sorted=[...stocks].sort((a,b)=>b.changePercent-a.changePercent);
   const best=sorted[0],worst=sorted[sorted.length-1];
   document.getElementById('ibest').textContent=best?`${best.symbol} +${best.changePercent.toFixed(2)}%`:'—';
   document.getElementById('iworst').textContent=worst?`${worst.symbol} ${worst.changePercent.toFixed(2)}%`:'—';
+  
   const phtStr=demoMode?'Demo mode':ts.toLocaleString('en-PH',{timeZone:'Asia/Manila',year:'numeric',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'});
   document.getElementById('lupd').textContent=demoMode?'⚠ Demo mode':`Updated: ${phtStr} PHT`;
   render(); startCountdown();
@@ -260,16 +338,11 @@ function process(data){
 const dir=s=>s.change>0?'up':s.change<0?'dn':'fl';
 const arr=d=>d==='up'?'▲':d==='dn'?'▼':'—';
 const fvol=v=>{if(!v&&v!==0)return'—';if(v>=1e9)return(v/1e9).toFixed(2)+'B';if(v>=1e6)return(v/1e6).toFixed(2)+'M';if(v>=1e3)return(v/1e3).toFixed(1)+'K';return v.toLocaleString()};
-function sparkBars(sym,pct,d){
-  const col=d==='up'?'var(--up)':d==='dn'?'var(--dn)':'var(--tm)';
-  const seed=sym.split('').reduce((a,c)=>a+c.charCodeAt(0),0),inten=Math.min(Math.abs(pct)/4,1);
-  const bars=[0,1,2,3,4].map(i=>{const base=((seed*13+i*7)%14)+4,boost=i===4?inten*18:0;return Math.round(base+boost)});
-  const mx=Math.max(...bars);
-  return bars.map(h=>`<div class="sb" style="height:${Math.round(h/mx*22)}px;background:${col};opacity:.75"></div>`).join('');
-}
+
 function render(){
   const q=query.toLowerCase();
   let list=stocks.filter(s=>!q||s.symbol.toLowerCase().includes(q)||(s.name||'').toLowerCase().includes(q));
+  
   list=[...list].sort((a,b)=>{
     if(sortKey==='sym')return a.symbol.localeCompare(b.symbol);
     if(sortKey==='prc')return(b.price||0)-(a.price||0);
@@ -277,26 +350,86 @@ function render(){
     if(sortKey==='vol')return(b.volume||0)-(a.volume||0);
     return 0;
   });
-  if(!list.length){document.getElementById('scont').innerHTML=`<div class="soverlay"><div class="slbl">No stocks match "${query}"</div></div>`;return;}
-  document.getElementById('scont').innerHTML=`<div class="grid">${list.map((s,i)=>{
-    const d=dir(s),a=arr(d);
-    const pct=typeof s.changePercent==='number'?`${s.changePercent>0?'+':''}${s.changePercent.toFixed(2)}%`:'—';
-    const chg=typeof s.change==='number'?`${s.change>0?'+':''}₱${Math.abs(s.change).toFixed(2)}`:'—';
-    const px=typeof s.price==='number'?s.price.toFixed(2):'—';
-    const pc=typeof s.previousClose==='number'?`₱${s.previousClose.toFixed(2)}`:'—';
-    return`<div class="card ${d}" style="animation-delay:${i*.04}s">
-      <div class="ch"><div><div class="sym">${s.symbol}</div><div class="cname">${s.name||''}</div></div><div class="cbadge ${d}">${a} ${pct}</div></div>
-      <div class="cprice ${d}"><span class="cur">₱</span>${px}</div>
-      <div class="cchg">${chg} from prev. close ${pc}</div>
-      <div class="cfoot">
-        <div class="fi"><div class="fl2">Volume</div><div class="fv">${fvol(s.volume)}</div></div>
-        <div class="fi"><div class="fl2">Prev. Close</div><div class="fv">${pc}</div></div>
-        <div class="sbar">${sparkBars(s.symbol,s.changePercent||0,d)}</div>
-      </div></div>`;
-  }).join('')}</div>`;
+
+  if(viewMode === 'watchlist') {
+    // --- WATCHLIST VIEW (CARDS) ---
+    const wList = list.filter(s => watchlist.includes(s.symbol));
+    
+    if(!wList.length){
+        document.getElementById('scont').innerHTML=`<div class="soverlay"><div class="slbl">Your watchlist is empty or no matches found. Click "Show All Stocks" to add some!</div></div>`;
+        return;
+    }
+    
+    document.getElementById('scont').innerHTML=`<div class="grid">${wList.map((s,i)=>{
+      const d=dir(s),a=arr(d);
+      const pct=typeof s.changePercent==='number'?`${s.changePercent>0?'+':''}${s.changePercent.toFixed(2)}%`:'—';
+      const chg=typeof s.change==='number'?`${s.change>0?'+':''}₱${Math.abs(s.change).toFixed(2)}`:'—';
+      const px=typeof s.price==='number'?s.price.toFixed(2):'—';
+      const pc=typeof s.previousClose==='number'?`₱${s.previousClose.toFixed(2)}`:'—';
+      
+      return`<div class="card ${d}" style="animation-delay:${i*.04}s">
+        <div class="ch"><div><div class="sym">${s.symbol}</div><div class="cname">${s.name||''}</div></div><div class="cbadge ${d}">${a} ${pct}</div></div>
+        <div class="cprice ${d}"><span class="cur">₱</span>${px}</div>
+        <div class="cchg">${chg} from prev. close ${pc}</div>
+        <div class="cfoot">
+          <div class="fi"><div class="fl2">Volume</div><div class="fv">${fvol(s.volume)}</div></div>
+          <button class="btn-action btn-rm" onclick="toggleWatchlist('${s.symbol}')">Remove</button>
+        </div></div>`;
+    }).join('')}</div>`;
+
+  } else {
+    // --- ALL STOCKS VIEW (TABLE) ---
+    if(!list.length){
+        document.getElementById('scont').innerHTML=`<div class="soverlay"><div class="slbl">No stocks match "${query}"</div></div>`;
+        return;
+    }
+    
+    document.getElementById('scont').innerHTML = `
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Symbol</th>
+              <th>Company Name</th>
+              <th>Price</th>
+              <th>Change</th>
+              <th>Volume</th>
+              <th>Watchlist</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${list.map(s => {
+              const d=dir(s);
+              const isW = watchlist.includes(s.symbol);
+              const btn = isW 
+                  ? `<button class="btn-action btn-rm" onclick="toggleWatchlist('${s.symbol}')">Remove</button>` 
+                  : `<button class="btn-action btn-add" onclick="toggleWatchlist('${s.symbol}')">Add</button>`;
+              const px=typeof s.price==='number'?s.price.toFixed(2):'—';
+              const pct=typeof s.changePercent==='number'?`${s.changePercent>0?'+':''}${s.changePercent.toFixed(2)}%`:'—';
+              
+              return `<tr>
+                <td><strong>${s.symbol}</strong></td>
+                <td>${s.name||''}</td>
+                <td class="${d}">₱${px}</td>
+                <td class="${d}">${pct}</td>
+                <td>${fvol(s.volume)}</td>
+                <td>${btn}</td>
+              </tr>`;
+            }).join('')}
+          </tbody>
+        </table>
+      </div>`;
+  }
 }
-function setSort(k){sortKey=k;document.querySelectorAll('.sbtn').forEach(b=>b.classList.toggle('on',b.dataset.s===k));render();}
+
+function setSort(k){
+    sortKey=k;
+    document.querySelectorAll('.sbtn[data-s]').forEach(b=>b.classList.toggle('on',b.dataset.s===k));
+    render();
+}
+
 document.getElementById('srch').addEventListener('input',e=>{query=e.target.value;render();});
+
 function startCountdown(){
   clearInterval(timer);secs=REFRESH_SEC;
   timer=setInterval(()=>{
@@ -307,6 +440,7 @@ function startCountdown(){
     if(secs<=0)loadData();
   },1000);
 }
+
 loadData();
 </script>
 </body>
