@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T05:48:49.391Z",
+  "lastUpdated": "2026-06-12T10:11:55.351Z",
   "source": "TradingView Screener (scanner.tradingview.com)",
   "fetchedBy": "GitHub Actions",
   "stocks": [
@@ -13,7 +13,7 @@
       "volume": 1000,
       "dayHigh": 1.78,
       "dayLow": 1.78,
-      "marketCap": 4835499939,
+      "marketCap": 4530099927,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -27,7 +27,7 @@
       "volume": 2140000,
       "dayHigh": 0.31,
       "dayLow": 0.3,
-      "marketCap": 1396403487,
+      "marketCap": 1373880872,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -41,7 +41,7 @@
       "volume": 247200,
       "dayHigh": 24.95,
       "dayLow": 24,
-      "marketCap": 7350000000,
+      "marketCap": 7200000000,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -55,7 +55,7 @@
       "volume": 561000,
       "dayHigh": 2.18,
       "dayLow": 2.11,
-      "marketCap": 1901002370,
+      "marketCap": 1883561999,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -69,7 +69,7 @@
       "volume": 750050,
       "dayHigh": 389,
       "dayLow": 373,
-      "marketCap": 238860001526,
+      "marketCap": 239480417114,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -97,7 +97,7 @@
       "volume": 7943000,
       "dayHigh": 3.28,
       "dayLow": 3.16,
-      "marketCap": 127844601905,
+      "marketCap": 129043143887,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -111,7 +111,7 @@
       "volume": 10,
       "dayHigh": 1987,
       "dayLow": 1987,
-      "marketCap": 238860001526,
+      "marketCap": 239480417114,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -125,7 +125,7 @@
       "volume": 292000,
       "dayHigh": 0.68,
       "dayLow": 0.64,
-      "marketCap": 4278220045,
+      "marketCap": 4215305105.0000005,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -139,7 +139,7 @@
       "volume": 203000,
       "dayHigh": 32.45,
       "dayLow": 31.5,
-      "marketCap": 177689765625,
+      "marketCap": 174913363037,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -153,7 +153,7 @@
       "volume": 2824600,
       "dayHigh": 8.05,
       "dayLow": 7.99,
-      "marketCap": 69526319245,
+      "marketCap": 69008750000,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -209,7 +209,7 @@
       "volume": 24821200,
       "dayHigh": 13.36,
       "dayLow": 12.58,
-      "marketCap": 188638619149,
+      "marketCap": 182064848448,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -237,7 +237,7 @@
       "volume": 127000,
       "dayHigh": 1.1,
       "dayLow": 1.08,
-      "marketCap": 6877362893,
+      "marketCap": 6814841473,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -279,7 +279,7 @@
       "volume": 1800,
       "dayHigh": 16.6,
       "dayLow": 16.32,
-      "marketCap": 20893245203,
+      "marketCap": 20377665629,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -293,7 +293,7 @@
       "volume": 335200,
       "dayHigh": 44.5,
       "dayLow": 43.9,
-      "marketCap": 320300237675,
+      "marketCap": 317057597656,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -321,7 +321,7 @@
       "volume": 128000000,
       "dayHigh": 0.0064,
       "dayLow": 0.0063,
-      "marketCap": 1873192553,
+      "marketCap": 1843923968,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -335,7 +335,7 @@
       "volume": 3000,
       "dayHigh": 0.92,
       "dayLow": 0.88,
-      "marketCap": 2793071564,
+      "marketCap": 2763038566,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -349,7 +349,7 @@
       "volume": 1100,
       "dayHigh": 10.3,
       "dayLow": 9.88,
-      "marketCap": 988000011,
+      "marketCap": 1019999981,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -363,7 +363,7 @@
       "volume": 5991600,
       "dayHigh": 14.28,
       "dayLow": 13.64,
-      "marketCap": 79872374567,
+      "marketCap": 80326194447,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -391,7 +391,7 @@
       "volume": 913400,
       "dayHigh": 38.4,
       "dayLow": 37.75,
-      "marketCap": 141198741211,
+      "marketCap": 141012956228,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -405,7 +405,7 @@
       "volume": 428000,
       "dayHigh": 0.94,
       "dayLow": 0.88,
-      "marketCap": 1395000011,
+      "marketCap": 1409999996,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -419,7 +419,7 @@
       "volume": 1333900,
       "dayHigh": 7.68,
       "dayLow": 7.12,
-      "marketCap": 26112437613,
+      "marketCap": 26148012258,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -461,7 +461,7 @@
       "volume": 1200,
       "dayHigh": 43.95,
       "dayLow": 43.75,
-      "marketCap": 63697009277,
+      "marketCap": 63988196716,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -503,7 +503,7 @@
       "volume": 191500,
       "dayHigh": 6.5,
       "dayLow": 6.2,
-      "marketCap": 4579795166,
+      "marketCap": 4454828328,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -517,7 +517,7 @@
       "volume": 8900,
       "dayHigh": 6.26,
       "dayLow": 6.25,
-      "marketCap": 4579795166,
+      "marketCap": 4454828328,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -545,7 +545,7 @@
       "volume": 5133280,
       "dayHigh": 121.6,
       "dayLow": 116,
-      "marketCap": 643411061488,
+      "marketCap": 620470226877,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -559,7 +559,7 @@
       "volume": 382000,
       "dayHigh": 1.22,
       "dayLow": 1.21,
-      "marketCap": 11765785120,
+      "marketCap": 11669344352,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -573,7 +573,7 @@
       "volume": 2500000,
       "dayHigh": 0.029,
       "dayLow": 0.028,
-      "marketCap": 417599988,
+      "marketCap": 403200012,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -587,7 +587,7 @@
       "volume": 2000,
       "dayHigh": 0.57,
       "dayLow": 0.57,
-      "marketCap": 855945443,
+      "marketCap": 871230169,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -601,7 +601,7 @@
       "volume": 10785000,
       "dayHigh": 1.7,
       "dayLow": 1.6,
-      "marketCap": 19360087801,
+      "marketCap": 19014370917,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -615,7 +615,7 @@
       "volume": 58000,
       "dayHigh": 10.84,
       "dayLow": 10.52,
-      "marketCap": 15208671064,
+      "marketCap": 14759707039,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -629,7 +629,7 @@
       "volume": 1234890,
       "dayHigh": 92.05,
       "dayLow": 90,
-      "marketCap": 480115295264,
+      "marketCap": 480909757765,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -657,7 +657,7 @@
       "volume": 1060000,
       "dayHigh": 0.113,
       "dayLow": 0.109,
-      "marketCap": 1655522583,
+      "marketCap": 1626221347,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -671,7 +671,7 @@
       "volume": 445000,
       "dayHigh": 0.62,
       "dayLow": 0.59,
-      "marketCap": 1364861187,
+      "marketCap": 1387608851,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -727,7 +727,7 @@
       "volume": 53480,
       "dayHigh": 55.9,
       "dayLow": 54.55,
-      "marketCap": 146812613059,
+      "marketCap": 148292848188,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -741,7 +741,7 @@
       "volume": 1083000,
       "dayHigh": 0.63,
       "dayLow": 0.59,
-      "marketCap": 2934463971,
+      "marketCap": 2984200900,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -755,7 +755,7 @@
       "volume": 684400,
       "dayHigh": 29.95,
       "dayLow": 29.3,
-      "marketCap": 17953402853,
+      "marketCap": 17984040761,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -769,7 +769,7 @@
       "volume": 1200,
       "dayHigh": 31.9,
       "dayLow": 31.9,
-      "marketCap": 17953402853,
+      "marketCap": 17984040761,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -797,7 +797,7 @@
       "volume": 2800,
       "dayHigh": 16.64,
       "dayLow": 16.04,
-      "marketCap": 7159294595,
+      "marketCap": 7373805084,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -811,7 +811,7 @@
       "volume": 710000,
       "dayHigh": 0.82,
       "dayLow": 0.77,
-      "marketCap": 11061165685,
+      "marketCap": 10386704196,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -825,7 +825,7 @@
       "volume": 4400,
       "dayHigh": 12.5,
       "dayLow": 12.36,
-      "marketCap": 4904953468,
+      "marketCap": 4865587720,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -839,7 +839,7 @@
       "volume": 280000,
       "dayHigh": 2.19,
       "dayLow": 2.17,
-      "marketCap": 7519487337,
+      "marketCap": 7588791299,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -853,7 +853,7 @@
       "volume": 2244200,
       "dayHigh": 26.95,
       "dayLow": 26,
-      "marketCap": 94755422607,
+      "marketCap": 94932532844,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -895,7 +895,7 @@
       "volume": 29900,
       "dayHigh": 7.95,
       "dayLow": 7.81,
-      "marketCap": 55885750319,
+      "marketCap": 55815455519,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -909,7 +909,7 @@
       "volume": 2999000,
       "dayHigh": 0.66,
       "dayLow": 0.64,
-      "marketCap": 7655736691,
+      "marketCap": 7423744209,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -923,7 +923,7 @@
       "volume": 6000,
       "dayHigh": 2.16,
       "dayLow": 2.16,
-      "marketCap": 6232930659,
+      "marketCap": 6091914266,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -937,7 +937,7 @@
       "volume": 298000,
       "dayHigh": 4.6,
       "dayLow": 4.4,
-      "marketCap": 50781254668,
+      "marketCap": 51227682836,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -965,7 +965,7 @@
       "volume": 101000,
       "dayHigh": 1.75,
       "dayLow": 1.72,
-      "marketCap": 1056405442,
+      "marketCap": 1068618210.0000001,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1007,7 +1007,7 @@
       "volume": 1034700,
       "dayHigh": 11.9,
       "dayLow": 11.08,
-      "marketCap": 27765138561,
+      "marketCap": 27905839022,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1035,7 +1035,7 @@
       "volume": 1480,
       "dayHigh": 94,
       "dayLow": 93.5,
-      "marketCap": 27765138561,
+      "marketCap": 27905839022,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1077,7 +1077,7 @@
       "volume": 1152800,
       "dayHigh": 6.13,
       "dayLow": 5.78,
-      "marketCap": 12996477299,
+      "marketCap": 13018101516,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1105,7 +1105,7 @@
       "volume": 12000,
       "dayHigh": 3.28,
       "dayLow": 3.25,
-      "marketCap": 260988701,
+      "marketCap": 257034330,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1119,7 +1119,7 @@
       "volume": 3248100,
       "dayHigh": 8.62,
       "dayLow": 8.22,
-      "marketCap": 114186244713,
+      "marketCap": 113920689241,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1147,7 +1147,7 @@
       "volume": 4199000,
       "dayHigh": 3.7,
       "dayLow": 3.63,
-      "marketCap": 26428574608,
+      "marketCap": 26000001839,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1161,7 +1161,7 @@
       "volume": 13000,
       "dayHigh": 0.99,
       "dayLow": 0.86,
-      "marketCap": 845460008,
+      "marketCap": 734440012,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1203,7 +1203,7 @@
       "volume": 15000,
       "dayHigh": 1.96,
       "dayLow": 1.83,
-      "marketCap": 1896395055,
+      "marketCap": 1906757860,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1245,7 +1245,7 @@
       "volume": 2377600,
       "dayHigh": 15.44,
       "dayLow": 15.24,
-      "marketCap": 241274226366,
+      "marketCap": 242849129444,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1259,7 +1259,7 @@
       "volume": 17000,
       "dayHigh": 3.37,
       "dayLow": 3.05,
-      "marketCap": 769999981,
+      "marketCap": 764999986,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1287,7 +1287,7 @@
       "volume": 463800,
       "dayHigh": 12.3,
       "dayLow": 12.2,
-      "marketCap": 27539697669,
+      "marketCap": 27629696596,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1315,7 +1315,7 @@
       "volume": 40100,
       "dayHigh": 50,
       "dayLow": 48.9,
-      "marketCap": 289551790527,
+      "marketCap": 290142703532,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1329,7 +1329,7 @@
       "volume": 340000,
       "dayHigh": 0.55,
       "dayLow": 0.52,
-      "marketCap": 2898281294,
+      "marketCap": 2952966123,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1413,7 +1413,7 @@
       "volume": 160800,
       "dayHigh": 15.58,
       "dayLow": 15.3,
-      "marketCap": 55818852467,
+      "marketCap": 55387260396,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1427,7 +1427,7 @@
       "volume": 663000,
       "dayHigh": 2.9,
       "dayLow": 2.88,
-      "marketCap": 18839278353,
+      "marketCap": 18904467663,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1455,7 +1455,7 @@
       "volume": 273000,
       "dayHigh": 0.7,
       "dayLow": 0.68,
-      "marketCap": 15668631569,
+      "marketCap": 15220956801,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1469,7 +1469,7 @@
       "volume": 811000,
       "dayHigh": 2.25,
       "dayLow": 2.16,
-      "marketCap": 11070379073,
+      "marketCap": 11480392705,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1497,7 +1497,7 @@
       "volume": 800,
       "dayHigh": 79.9,
       "dayLow": 77.05,
-      "marketCap": 33917596976,
+      "marketCap": 32707770972,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1511,7 +1511,7 @@
       "volume": 35000,
       "dayHigh": 0.65,
       "dayLow": 0.64,
-      "marketCap": 1362868566,
+      "marketCap": 1362589745,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1553,7 +1553,7 @@
       "volume": 43670,
       "dayHigh": 1705,
       "dayLow": 1660,
-      "marketCap": 246580551834,
+      "marketCap": 245857441711,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1567,7 +1567,7 @@
       "volume": 10,
       "dayHigh": 1992,
       "dayLow": 1992,
-      "marketCap": 246580551834,
+      "marketCap": 245857441711,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1581,7 +1581,7 @@
       "volume": 185,
       "dayHigh": 1969,
       "dayLow": 1967,
-      "marketCap": 246580551834,
+      "marketCap": 245857441711,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1595,7 +1595,7 @@
       "volume": 145000,
       "dayHigh": 4.86,
       "dayLow": 4.8,
-      "marketCap": 16416036830,
+      "marketCap": 16214200509,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1623,7 +1623,7 @@
       "volume": 1110000,
       "dayHigh": 0.162,
       "dayLow": 0.15,
-      "marketCap": 672426090,
+      "marketCap": 664124516,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1637,7 +1637,7 @@
       "volume": 13200,
       "dayHigh": 269.6,
       "dayLow": 260.2,
-      "marketCap": 74445241089,
+      "marketCap": 76964922677,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1651,7 +1651,7 @@
       "volume": 186260,
       "dayHigh": 484.8,
       "dayLow": 466,
-      "marketCap": 101183758087,
+      "marketCap": 102690750229,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1693,7 +1693,7 @@
       "volume": 334000,
       "dayHigh": 1.4,
       "dayLow": 1.37,
-      "marketCap": 3425000012,
+      "marketCap": 3499999940,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1707,7 +1707,7 @@
       "volume": 1637100,
       "dayHigh": 935,
       "dayLow": 888,
-      "marketCap": 1801164575684,
+      "marketCap": 1813280032471,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1763,7 +1763,7 @@
       "volume": 281000,
       "dayHigh": 1.07,
       "dayLow": 1.05,
-      "marketCap": 864225583,
+      "marketCap": 872456296,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1791,7 +1791,7 @@
       "volume": 200,
       "dayHigh": 6.74,
       "dayLow": 6.7,
-      "marketCap": 7038333618,
+      "marketCap": 6996563131,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1833,7 +1833,7 @@
       "volume": 1911760,
       "dayHigh": 129.2,
       "dayLow": 126.4,
-      "marketCap": 144682465092,
+      "marketCap": 143449687500,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1847,7 +1847,7 @@
       "volume": 1493500,
       "dayHigh": 25.55,
       "dayLow": 24.35,
-      "marketCap": 188776686170,
+      "marketCap": 183135948621,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1861,7 +1861,7 @@
       "volume": 2376000,
       "dayHigh": 1.88,
       "dayLow": 1.8,
-      "marketCap": 27131362569,
+      "marketCap": 26986275208,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1889,7 +1889,7 @@
       "volume": 3000,
       "dayHigh": 1.36,
       "dayLow": 1.28,
-      "marketCap": 271427767,
+      "marketCap": 257353725,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1903,7 +1903,7 @@
       "volume": 100,
       "dayHigh": 6.06,
       "dayLow": 6.06,
-      "marketCap": 8555192870.999999,
+      "marketCap": 8640744718,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1917,7 +1917,7 @@
       "volume": 68800000,
       "dayHigh": 0.179,
       "dayLow": 0.175,
-      "marketCap": 11934366482,
+      "marketCap": 11801615093,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1931,7 +1931,7 @@
       "volume": 100000,
       "dayHigh": 0.186,
       "dayLow": 0.179,
-      "marketCap": 11934366482,
+      "marketCap": 11801615093,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1945,7 +1945,7 @@
       "volume": 600,
       "dayHigh": 29.7,
       "dayLow": 29.7,
-      "marketCap": 4462500000,
+      "marketCap": 4455000114,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1973,7 +1973,7 @@
       "volume": 290000,
       "dayHigh": 0.3,
       "dayLow": 0.3,
-      "marketCap": 959999979,
+      "marketCap": 900000036,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1987,7 +1987,7 @@
       "volume": 104000,
       "dayHigh": 1.78,
       "dayLow": 1.77,
-      "marketCap": 1472525158,
+      "marketCap": 1456072378,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2015,7 +2015,7 @@
       "volume": 44000,
       "dayHigh": 3.86,
       "dayLow": 3.76,
-      "marketCap": 14277003479,
+      "marketCap": 14467363344,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2029,7 +2029,7 @@
       "volume": 2000,
       "dayHigh": 0.61,
       "dayLow": 0.6,
-      "marketCap": 693121796,
+      "marketCap": 604006161,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2043,7 +2043,7 @@
       "volume": 1987900,
       "dayHigh": 14.72,
       "dayLow": 14.46,
-      "marketCap": 158353406448,
+      "marketCap": 156622759502,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2057,7 +2057,7 @@
       "volume": 5000000,
       "dayHigh": 0.0073,
       "dayLow": 0.0071,
-      "marketCap": 2292675778,
+      "marketCap": 2224134276,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2071,7 +2071,7 @@
       "volume": 3000000,
       "dayHigh": 0.0073,
       "dayLow": 0.0072,
-      "marketCap": 2292675778,
+      "marketCap": 2224134276,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2127,7 +2127,7 @@
       "volume": 146000,
       "dayHigh": 0.65,
       "dayLow": 0.61,
-      "marketCap": 1899336782,
+      "marketCap": 1929484957,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2141,7 +2141,7 @@
       "volume": 60000,
       "dayHigh": 2.2,
       "dayLow": 2.18,
-      "marketCap": 1712780469,
+      "marketCap": 1704995111,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2155,7 +2155,7 @@
       "volume": 30000,
       "dayHigh": 0.19,
       "dayLow": 0.19,
-      "marketCap": 724423106,
+      "marketCap": 658566432,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2183,7 +2183,7 @@
       "volume": 3686220,
       "dayHigh": 64.05,
       "dayLow": 62.9,
-      "marketCap": 287751531250,
+      "marketCap": 283255413574,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2225,7 +2225,7 @@
       "volume": 6614000,
       "dayHigh": 2,
       "dayLow": 1.96,
-      "marketCap": 64211168587,
+      "marketCap": 63886870068,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2253,7 +2253,7 @@
       "volume": 95,
       "dayHigh": 2300,
       "dayLow": 2200,
-      "marketCap": 4002470813784.547,
+      "marketCap": 4053625325406.5176,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2295,7 +2295,7 @@
       "volume": 50000,
       "dayHigh": 0.105,
       "dayLow": 0.105,
-      "marketCap": 133540530.99999999,
+      "marketCap": 119844064,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2323,7 +2323,7 @@
       "volume": 3946100,
       "dayHigh": 7,
       "dayLow": 6.84,
-      "marketCap": 125600589071,
+      "marketCap": 125780279297,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2337,7 +2337,7 @@
       "volume": 36155000,
       "dayHigh": 0.76,
       "dayLow": 0.74,
-      "marketCap": 1124699432,
+      "marketCap": 1139695411,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2351,7 +2351,7 @@
       "volume": 932300,
       "dayHigh": 13.8,
       "dayLow": 13.6,
-      "marketCap": 65025739629,
+      "marketCap": 64270724489,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2365,7 +2365,7 @@
       "volume": 11000,
       "dayHigh": 1.1,
       "dayLow": 1.08,
-      "marketCap": 3492445920,
+      "marketCap": 3557120780,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2379,7 +2379,7 @@
       "volume": 500,
       "dayHigh": 5.2,
       "dayLow": 5.19,
-      "marketCap": 3491713703,
+      "marketCap": 3438808687,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2393,7 +2393,7 @@
       "volume": 2135000,
       "dayHigh": 40,
       "dayLow": 39.25,
-      "marketCap": 103423273072,
+      "marketCap": 103292844848,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2407,7 +2407,7 @@
       "volume": 2022000,
       "dayHigh": 3.44,
       "dayLow": 3.32,
-      "marketCap": 6859840939,
+      "marketCap": 6839664475,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2421,7 +2421,7 @@
       "volume": 10,
       "dayHigh": 101,
       "dayLow": 101,
-      "marketCap": 6859840939,
+      "marketCap": 6839664475,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2435,7 +2435,7 @@
       "volume": 200,
       "dayHigh": 101.5,
       "dayLow": 101.5,
-      "marketCap": 6859840939,
+      "marketCap": 6839664475,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2449,7 +2449,7 @@
       "volume": 1930500,
       "dayHigh": 23,
       "dayLow": 22.5,
-      "marketCap": 169519617684,
+      "marketCap": 169149493156,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2477,7 +2477,7 @@
       "volume": 2590000,
       "dayHigh": 4.5,
       "dayLow": 4.36,
-      "marketCap": 62550748061,
+      "marketCap": 62690062500,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2491,7 +2491,7 @@
       "volume": 4075000,
       "dayHigh": 0.61,
       "dayLow": 0.52,
-      "marketCap": 975632251,
+      "marketCap": 1102103080,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2505,7 +2505,7 @@
       "volume": 1090000,
       "dayHigh": 1,
       "dayLow": 0.9,
-      "marketCap": 2335966335,
+      "marketCap": 1996189365,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2519,7 +2519,7 @@
       "volume": 886800,
       "dayHigh": 31.35,
       "dayLow": 29.75,
-      "marketCap": 70223998260,
+      "marketCap": 71363998260,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2547,7 +2547,7 @@
       "volume": 36200000,
       "dayHigh": 0.014,
       "dayLow": 0.013,
-      "marketCap": 2642356891,
+      "marketCap": 2640143360,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2561,7 +2561,7 @@
       "volume": 2100000,
       "dayHigh": 0.013,
       "dayLow": 0.013,
-      "marketCap": 2642356891,
+      "marketCap": 2640143360,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2575,7 +2575,7 @@
       "volume": 30000,
       "dayHigh": 0.425,
       "dayLow": 0.41,
-      "marketCap": 1237755021,
+      "marketCap": 1223362534,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2589,7 +2589,7 @@
       "volume": 1000000,
       "dayHigh": 0.0087,
       "dayLow": 0.0087,
-      "marketCap": 1650071709,
+      "marketCap": 1669258556,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2645,7 +2645,7 @@
       "volume": 1100,
       "dayHigh": 7.41,
       "dayLow": 7.41,
-      "marketCap": 6083313266,
+      "marketCap": 6066938280,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2673,7 +2673,7 @@
       "volume": 1508000,
       "dayHigh": 2.2,
       "dayLow": 2.12,
-      "marketCap": 19338739762,
+      "marketCap": 19160502705,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2687,7 +2687,7 @@
       "volume": 18000,
       "dayHigh": 3.62,
       "dayLow": 3.6,
-      "marketCap": 2047362617,
+      "marketCap": 2058736843.0000002,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2701,7 +2701,7 @@
       "volume": 1913900,
       "dayHigh": 46.15,
       "dayLow": 45.4,
-      "marketCap": 132918347765.99998,
+      "marketCap": 132198313403.99998,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2715,7 +2715,7 @@
       "volume": 80000,
       "dayHigh": 0.15,
       "dayLow": 0.142,
-      "marketCap": 856253940,
+      "marketCap": 810587058,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2743,7 +2743,7 @@
       "volume": 10000,
       "dayHigh": 0.43,
       "dayLow": 0.43,
-      "marketCap": 1156439959,
+      "marketCap": 1243172958,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2757,7 +2757,7 @@
       "volume": 18400,
       "dayHigh": 14,
       "dayLow": 13.12,
-      "marketCap": 4210792362.9999995,
+      "marketCap": 4459672976,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2785,7 +2785,7 @@
       "volume": 79500,
       "dayHigh": 6.22,
       "dayLow": 5.66,
-      "marketCap": 10472987667,
+      "marketCap": 10186749119,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2799,7 +2799,7 @@
       "volume": 4163200,
       "dayHigh": 11.12,
       "dayLow": 10.64,
-      "marketCap": 48655203185,
+      "marketCap": 48385609374,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2813,7 +2813,7 @@
       "volume": 86000,
       "dayHigh": 8.54,
       "dayLow": 8.4,
-      "marketCap": 3686104795,
+      "marketCap": 3559289186,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2827,7 +2827,7 @@
       "volume": 281270,
       "dayHigh": 56.3,
       "dayLow": 54.85,
-      "marketCap": 85824275208,
+      "marketCap": 85442833984,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2841,7 +2841,7 @@
       "volume": 16500,
       "dayHigh": 15,
       "dayLow": 14.6,
-      "marketCap": 27644027937,
+      "marketCap": 28208192139,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2883,7 +2883,7 @@
       "volume": 5,
       "dayHigh": 1015,
       "dayLow": 1015,
-      "marketCap": 19338739762,
+      "marketCap": 19160502705,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2925,7 +2925,7 @@
       "volume": 10080,
       "dayHigh": 54,
       "dayLow": 51,
-      "marketCap": 22879665120,
+      "marketCap": 22623550110,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2939,7 +2939,7 @@
       "volume": 22120,
       "dayHigh": 214.6,
       "dayLow": 210,
-      "marketCap": 17276253891,
+      "marketCap": 17358521767,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2967,7 +2967,7 @@
       "volume": 13650900,
       "dayHigh": 8,
       "dayLow": 7.65,
-      "marketCap": 45680952065,
+      "marketCap": 44351000202,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2981,7 +2981,7 @@
       "volume": 153000,
       "dayHigh": 2.41,
       "dayLow": 2.36,
-      "marketCap": 4704000187,
+      "marketCap": 4625600262,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -2995,7 +2995,7 @@
       "volume": 2000,
       "dayHigh": 23.4,
       "dayLow": 23.4,
-      "marketCap": 55528356094,
+      "marketCap": 56617144585,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3009,7 +3009,7 @@
       "volume": 33000,
       "dayHigh": 2.54,
       "dayLow": 2.4,
-      "marketCap": 6730169799,
+      "marketCap": 7094720301,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3023,7 +3023,7 @@
       "volume": 1611100,
       "dayHigh": 6.84,
       "dayLow": 6.77,
-      "marketCap": 132931875604,
+      "marketCap": 133518334524,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3065,7 +3065,7 @@
       "volume": 332000,
       "dayHigh": 5.51,
       "dayLow": 5.47,
-      "marketCap": 18498824976,
+      "marketCap": 18532521240,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3079,7 +3079,7 @@
       "volume": 3005200,
       "dayHigh": 16.56,
       "dayLow": 16.12,
-      "marketCap": 77458304189,
+      "marketCap": 78323215475,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3135,7 +3135,7 @@
       "volume": 2000,
       "dayHigh": 3.2,
       "dayLow": 3.2,
-      "marketCap": 6164659982,
+      "marketCap": 6051200090,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3149,7 +3149,7 @@
       "volume": 701600,
       "dayHigh": 26.35,
       "dayLow": 25.8,
-      "marketCap": 110514231445,
+      "marketCap": 111789392411,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3163,7 +3163,7 @@
       "volume": 361200,
       "dayHigh": 63.45,
       "dayLow": 62,
-      "marketCap": 47548302140,
+      "marketCap": 46870118873,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3177,7 +3177,7 @@
       "volume": 30800,
       "dayHigh": 33.6,
       "dayLow": 32.35,
-      "marketCap": 49621041619,
+      "marketCap": 49545400940,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3191,7 +3191,7 @@
       "volume": 210000,
       "dayHigh": 0.053,
       "dayLow": 0.048,
-      "marketCap": 90921852,
+      "marketCap": 96377160,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3219,7 +3219,7 @@
       "volume": 6366300,
       "dayHigh": 30.05,
       "dayLow": 28.4,
-      "marketCap": 159029163588,
+      "marketCap": 155343053223,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3233,7 +3233,7 @@
       "volume": 326100,
       "dayHigh": 9.09,
       "dayLow": 8.31,
-      "marketCap": 14036964353,
+      "marketCap": 14601670443,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3247,7 +3247,7 @@
       "volume": 48000,
       "dayHigh": 3.1,
       "dayLow": 3.07,
-      "marketCap": 15047661190,
+      "marketCap": 14619087846,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3261,7 +3261,7 @@
       "volume": 5,
       "dayHigh": 4500,
       "dayLow": 4500,
-      "marketCap": 2534689599872.827,
+      "marketCap": 2567928925366.7993,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3275,7 +3275,7 @@
       "volume": 7000,
       "dayHigh": 1.92,
       "dayLow": 1.92,
-      "marketCap": 16426971545,
+      "marketCap": 15929185008,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3289,7 +3289,7 @@
       "volume": 95790,
       "dayHigh": 591.5,
       "dayLow": 577,
-      "marketCap": 717959490967,
+      "marketCap": 711875088501,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3303,7 +3303,7 @@
       "volume": 35360,
       "dayHigh": 67.7,
       "dayLow": 67,
-      "marketCap": 160436240674,
+      "marketCap": 160913012695,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3317,7 +3317,7 @@
       "volume": 3500,
       "dayHigh": 73,
       "dayLow": 73,
-      "marketCap": 160436240674,
+      "marketCap": 160913012695,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3331,7 +3331,7 @@
       "volume": 10,
       "dayHigh": 75.5,
       "dayLow": 75.5,
-      "marketCap": 160436240674,
+      "marketCap": 160913012695,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3345,7 +3345,7 @@
       "volume": 60,
       "dayHigh": 76.2,
       "dayLow": 76.2,
-      "marketCap": 160436240674,
+      "marketCap": 160913012695,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3359,7 +3359,7 @@
       "volume": 1000,
       "dayHigh": 77,
       "dayLow": 75.65,
-      "marketCap": 160436240674,
+      "marketCap": 160913012695,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3373,7 +3373,7 @@
       "volume": 30,
       "dayHigh": 78.9,
       "dayLow": 77,
-      "marketCap": 160436240674,
+      "marketCap": 160913012695,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3387,7 +3387,7 @@
       "volume": 420,
       "dayHigh": 76.9,
       "dayLow": 76.5,
-      "marketCap": 160436240674,
+      "marketCap": 160913012695,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3401,7 +3401,7 @@
       "volume": 4975000,
       "dayHigh": 17.84,
       "dayLow": 17.48,
-      "marketCap": 511207599573,
+      "marketCap": 505463726581,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3429,7 +3429,7 @@
       "volume": 52200,
       "dayHigh": 10.9,
       "dayLow": 10.7,
-      "marketCap": 16282483296,
+      "marketCap": 16162759270,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3443,7 +3443,7 @@
       "volume": 25000,
       "dayHigh": 2.6,
       "dayLow": 2.38,
-      "marketCap": 282116973,
+      "marketCap": 316716256,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3457,7 +3457,7 @@
       "volume": 12330000,
       "dayHigh": 1.34,
       "dayLow": 1.28,
-      "marketCap": 66597154492.99999,
+      "marketCap": 66096418531.99999,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3485,7 +3485,7 @@
       "volume": 95000,
       "dayHigh": 2.24,
       "dayLow": 2.14,
-      "marketCap": 6998181217,
+      "marketCap": 7325198703,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3583,7 +3583,7 @@
       "volume": 108800,
       "dayHigh": 0.03,
       "dayLow": 0.03,
-      "marketCap": 365653039.2788564,
+      "marketCap": 381048297.48508114,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3597,7 +3597,7 @@
       "volume": 1026000,
       "dayHigh": 0.57,
       "dayLow": 0.54,
-      "marketCap": 367678197,
+      "marketCap": 381048300,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3611,7 +3611,7 @@
       "volume": 178870,
       "dayHigh": 1103,
       "dayLow": 1065,
-      "marketCap": 234420527954,
+      "marketCap": 233988416382,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3639,7 +3639,7 @@
       "volume": 3850,
       "dayHigh": 53,
       "dayLow": 52.5,
-      "marketCap": 19892232117,
+      "marketCap": 19704569550,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3653,7 +3653,7 @@
       "volume": 2156000,
       "dayHigh": 1.39,
       "dayLow": 1.34,
-      "marketCap": 14931648616,
+      "marketCap": 14716804954,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3667,7 +3667,7 @@
       "volume": 692000,
       "dayHigh": 0.88,
       "dayLow": 0.84,
-      "marketCap": 769344706,
+      "marketCap": 778290566,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3681,7 +3681,7 @@
       "volume": 8500,
       "dayHigh": 25,
       "dayLow": 24.75,
-      "marketCap": 82909436035,
+      "marketCap": 82080341675,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3695,7 +3695,7 @@
       "volume": 50000000,
       "dayHigh": 0.0074,
       "dayLow": 0.0067,
-      "marketCap": 1772153714,
+      "marketCap": 1798603849,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3709,7 +3709,7 @@
       "volume": 20000,
       "dayHigh": 0.7,
       "dayLow": 0.68,
-      "marketCap": 2236842426,
+      "marketCap": 2302631846,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3723,7 +3723,7 @@
       "volume": 2069030,
       "dayHigh": 59.3,
       "dayLow": 55.9,
-      "marketCap": 126057101074,
+      "marketCap": 119433765125,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3737,7 +3737,7 @@
       "volume": 43000,
       "dayHigh": 0.88,
       "dayLow": 0.87,
-      "marketCap": 3737628382,
+      "marketCap": 3653636812,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3807,7 +3807,7 @@
       "volume": 1200,
       "dayHigh": 20.7,
       "dayLow": 20.6,
-      "marketCap": 21339071856,
+      "marketCap": 21083207690,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3821,7 +3821,7 @@
       "volume": 1991600,
       "dayHigh": 11.82,
       "dayLow": 11.54,
-      "marketCap": 15012319773,
+      "marketCap": 15063469026,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3835,7 +3835,7 @@
       "volume": 347100,
       "dayHigh": 5.46,
       "dayLow": 5.43,
-      "marketCap": 22384493858,
+      "marketCap": 22343495678,
       "currency": "PHP",
       "exchange": "PSE"
     },
