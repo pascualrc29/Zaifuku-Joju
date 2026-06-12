@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T09:51:22.757Z",
+  "lastUpdated": "2026-06-12T05:48:49.391Z",
   "source": "TradingView Screener (scanner.tradingview.com)",
   "fetchedBy": "GitHub Actions",
   "stocks": [
@@ -1049,7 +1049,7 @@
       "volume": 14000,
       "dayHigh": 4.52,
       "dayLow": 4.5,
-      "marketCap": 8170230413.759999,
+      "marketCap": 8149308550.697675,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -1754,20 +1754,6 @@
       "exchange": "PSE"
     },
     {
-      "symbol": "INFRA",
-      "name": "Philippine Infradev Holdings, Inc.",
-      "price": 0.32,
-      "previousClose": 0.32,
-      "change": 0,
-      "changePercent": 0,
-      "volume": 70000,
-      "dayHigh": 0.32,
-      "dayLow": 0.32,
-      "marketCap": 1939699332,
-      "currency": "PHP",
-      "exchange": "PSE"
-    },
-    {
       "symbol": "ION",
       "name": "Ionics Inc.",
       "price": 1.06,
@@ -2267,7 +2253,7 @@
       "volume": 95,
       "dayHigh": 2300,
       "dayLow": 2200,
-      "marketCap": 4031388262004.3257,
+      "marketCap": 4002470813784.547,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3275,7 +3261,7 @@
       "volume": 5,
       "dayHigh": 4500,
       "dayLow": 4500,
-      "marketCap": 2553002476760.049,
+      "marketCap": 2534689599872.827,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3597,7 +3583,7 @@
       "volume": 108800,
       "dayHigh": 0.03,
       "dayLow": 0.03,
-      "marketCap": 367678199.75758654,
+      "marketCap": 365653039.2788564,
       "currency": "PHP",
       "exchange": "PSE"
     },
@@ -3766,20 +3752,6 @@
       "dayHigh": 0.5,
       "dayLow": 0.485,
       "marketCap": 1527166992,
-      "currency": "PHP",
-      "exchange": "PSE"
-    },
-    {
-      "symbol": "VLC",
-      "name": "Villar Land Holdings Corp.",
-      "price": 448,
-      "previousClose": 448,
-      "change": 0,
-      "changePercent": 0,
-      "volume": 10,
-      "dayHigh": 448,
-      "dayLow": 448,
-      "marketCap": 288564691406,
       "currency": "PHP",
       "exchange": "PSE"
     },
